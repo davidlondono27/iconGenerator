@@ -7,21 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F0DFBEB2811B88F005ABFB5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DFBE92811B05B005ABFB5 /* Home.swift */; };
+		6F0DFBEE2811B933005ABFB5 /* IconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0DFBEC2811B8D0005ABFB5 /* IconViewModel.swift */; };
+		6F0DFBEF2811FB5D005ABFB5 /* Content-Temp.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF40D2811A8D6001DB990 /* Content-Temp.json */; };
 		6F1DF3FF2811A6DA001DB990 /* IconGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF3EF2811A6D9001DB990 /* IconGeneratorApp.swift */; };
 		6F1DF4002811A6DA001DB990 /* IconGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF3EF2811A6D9001DB990 /* IconGeneratorApp.swift */; };
 		6F1DF4012811A6DA001DB990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF3F02811A6D9001DB990 /* ContentView.swift */; };
 		6F1DF4022811A6DA001DB990 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1DF3F02811A6D9001DB990 /* ContentView.swift */; };
-		6F1DF4032811A6DA001DB990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF3F12811A6DA001DB990 /* Assets.xcassets */; };
 		6F1DF4042811A6DA001DB990 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F1DF3F12811A6DA001DB990 /* Assets.xcassets */; };
+		6F494F5F281313F00087B176 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 6F494F5E281313020087B176 /* Contents.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F0DFBE92811B05B005ABFB5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		6F0DFBEC2811B8D0005ABFB5 /* IconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconViewModel.swift; sourceTree = "<group>"; };
 		6F1DF3EF2811A6D9001DB990 /* IconGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconGeneratorApp.swift; sourceTree = "<group>"; };
 		6F1DF3F02811A6D9001DB990 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6F1DF3F12811A6DA001DB990 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F1DF3F62811A6DA001DB990 /* IconGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F1DF3FC2811A6DA001DB990 /* IconGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1DF3FC2811A6DA001DB990 /*  Icon Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " Icon Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F1DF3FE2811A6DA001DB990 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		6F1DF40D2811A8D6001DB990 /* Content-Temp.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "Content-Temp.json"; sourceTree = "<group>"; };
+		6F494F5E281313020087B176 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,8 @@
 		6F1DF3E92811A6D9001DB990 = {
 			isa = PBXGroup;
 			children = (
+				6F1DF40D2811A8D6001DB990 /* Content-Temp.json */,
+				6F494F5E281313020087B176 /* Contents.json */,
 				6F1DF3EE2811A6D9001DB990 /* Shared */,
 				6F1DF3FD2811A6DA001DB990 /* macOS */,
 				6F1DF3F72811A6DA001DB990 /* Products */,
@@ -54,6 +63,8 @@
 		6F1DF3EE2811A6D9001DB990 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6F1DF4102811A99F001DB990 /* ViewModel */,
+				6F1DF40F2811A98C001DB990 /* View */,
 				6F1DF3EF2811A6D9001DB990 /* IconGeneratorApp.swift */,
 				6F1DF3F02811A6D9001DB990 /* ContentView.swift */,
 				6F1DF3F12811A6DA001DB990 /* Assets.xcassets */,
@@ -65,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				6F1DF3F62811A6DA001DB990 /* IconGenerator.app */,
-				6F1DF3FC2811A6DA001DB990 /* IconGenerator.app */,
+				6F1DF3FC2811A6DA001DB990 /*  Icon Generator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,12 +89,28 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		6F1DF40F2811A98C001DB990 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DFBE92811B05B005ABFB5 /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6F1DF4102811A99F001DB990 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6F0DFBEC2811B8D0005ABFB5 /* IconViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F1DF3F52811A6DA001DB990 /* IconGenerator (iOS) */ = {
+		6F1DF3F52811A6DA001DB990 /*  Icon Generator (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F1DF4072811A6DA001DB990 /* Build configuration list for PBXNativeTarget "IconGenerator (iOS)" */;
+			buildConfigurationList = 6F1DF4072811A6DA001DB990 /* Build configuration list for PBXNativeTarget " Icon Generator (iOS)" */;
 			buildPhases = (
 				6F1DF3F22811A6DA001DB990 /* Sources */,
 				6F1DF3F32811A6DA001DB990 /* Frameworks */,
@@ -93,14 +120,14 @@
 			);
 			dependencies = (
 			);
-			name = "IconGenerator (iOS)";
+			name = " Icon Generator (iOS)";
 			productName = "IconGenerator (iOS)";
 			productReference = 6F1DF3F62811A6DA001DB990 /* IconGenerator.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6F1DF3FB2811A6DA001DB990 /* IconGenerator (macOS) */ = {
+		6F1DF3FB2811A6DA001DB990 /*  Icon Generator (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F1DF40A2811A6DA001DB990 /* Build configuration list for PBXNativeTarget "IconGenerator (macOS)" */;
+			buildConfigurationList = 6F1DF40A2811A6DA001DB990 /* Build configuration list for PBXNativeTarget " Icon Generator (macOS)" */;
 			buildPhases = (
 				6F1DF3F82811A6DA001DB990 /* Sources */,
 				6F1DF3F92811A6DA001DB990 /* Frameworks */,
@@ -110,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = "IconGenerator (macOS)";
+			name = " Icon Generator (macOS)";
 			productName = "IconGenerator (macOS)";
-			productReference = 6F1DF3FC2811A6DA001DB990 /* IconGenerator.app */;
+			productReference = 6F1DF3FC2811A6DA001DB990 /*  Icon Generator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6F1DF3ED2811A6D9001DB990 /* Build configuration list for PBXProject "IconGenerator" */;
+			buildConfigurationList = 6F1DF3ED2811A6D9001DB990 /* Build configuration list for PBXProject " Icon Generator" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,8 +173,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F1DF3F52811A6DA001DB990 /* IconGenerator (iOS) */,
-				6F1DF3FB2811A6DA001DB990 /* IconGenerator (macOS) */,
+				6F1DF3F52811A6DA001DB990 /*  Icon Generator (iOS) */,
+				6F1DF3FB2811A6DA001DB990 /*  Icon Generator (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -157,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1DF4032811A6DA001DB990 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +192,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1DF4042811A6DA001DB990 /* Assets.xcassets in Resources */,
+				6F0DFBEF2811FB5D005ABFB5 /* Content-Temp.json in Resources */,
+				6F494F5F281313F00087B176 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F1DF4022811A6DA001DB990 /* ContentView.swift in Sources */,
+				6F0DFBEB2811B88F005ABFB5 /* Home.swift in Sources */,
 				6F1DF4002811A6DA001DB990 /* IconGeneratorApp.swift in Sources */,
+				6F0DFBEE2811B933005ABFB5 /* IconViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMY4B6CP23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -338,6 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMY4B6CP23;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -367,9 +399,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -380,7 +414,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.davidlondonog.IconGenerator;
-				PRODUCT_NAME = IconGenerator;
+				PRODUCT_NAME = " Icon Generator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -393,9 +428,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -406,7 +443,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = co.davidlondonog.IconGenerator;
-				PRODUCT_NAME = IconGenerator;
+				PRODUCT_NAME = " Icon Generator";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -416,7 +454,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F1DF3ED2811A6D9001DB990 /* Build configuration list for PBXProject "IconGenerator" */ = {
+		6F1DF3ED2811A6D9001DB990 /* Build configuration list for PBXProject " Icon Generator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F1DF4052811A6DA001DB990 /* Debug */,
@@ -425,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F1DF4072811A6DA001DB990 /* Build configuration list for PBXNativeTarget "IconGenerator (iOS)" */ = {
+		6F1DF4072811A6DA001DB990 /* Build configuration list for PBXNativeTarget " Icon Generator (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F1DF4082811A6DA001DB990 /* Debug */,
@@ -434,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F1DF40A2811A6DA001DB990 /* Build configuration list for PBXNativeTarget "IconGenerator (macOS)" */ = {
+		6F1DF40A2811A6DA001DB990 /* Build configuration list for PBXNativeTarget " Icon Generator (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6F1DF40B2811A6DA001DB990 /* Debug */,
